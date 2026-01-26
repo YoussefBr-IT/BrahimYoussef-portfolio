@@ -1,5 +1,7 @@
 import { 
   Bot, 
+  Code,
+  Coffee,
   FileDown, 
   Github, 
   Linkedin, 
@@ -26,9 +28,17 @@ const Index = () => {
     {
       role: "Stagiaire Développeur Web",
       company: "Axia Solutions",
-      period: "2024",
+      period: "2024-2025",
       description:
-        "Conception d’une application web pour un bar à salade (« Calories ») et développement d’une application de gestion d’employés. Technologies utilisées : React, Node.js."
+        "-Concevoir une application web pour un bar à salade « Calories ».\n" +
+        "-Conception d'une application de gestion d'employés. \n -Technologies : React, Node.js"
+    },
+     {
+      role: "Livreur & Employé Polyvalent ",
+      company: "Tempo Pizza",
+      period: "en cours",
+      description:
+        "-Livrer les commandes et gérer les encaissements.\n -Assurer la préparation logistique et réapprovisionnement des stocks.\n -Respecter strictement les normes d'hygiène et d'entretien."
     },
     {
       role: "Chef d’équipe",
@@ -38,11 +48,18 @@ const Index = () => {
         "Gestion et encadrement d’une équipe de serveurs lors de mariages et d’événements. Organisation, coordination et service client."
     },
     {
-      role: "Employé Polyvalent",
-      company: "Astral",
-      period: "2023",
+      role: "Employé polyvalent Restauration ",
+      company: "Calories",
+      period: "2024-2025",
       description:
-        "Chargé de la communication d’une entreprise de vente de peinture. Gestion du contenu et promotion de l’image de marque."
+        "-Accueillir et conseiller les clients.\n-Gérer les stocks et assurer leur réapprovisionnement.\n -Être responsable de la caisse "
+    },
+     {
+      role: " Serveur mariage/ événementiel ",
+      company: "Calories",
+      period: "2023-2025",
+      description:
+        "-Gérer et manager une équipe de serveurs en tant que chef d’équipe"
     }
   ];
 
@@ -52,7 +69,7 @@ const Index = () => {
       school: "École Supérieure d'Électronique de l’Ouest (ESEO)",
       period: "2025 - 2026",
       description:
-        "Études d’ingénierie orientées vers l’électronique et l’informatique. Réalisation de projets tels qu’une gâche électrique automatique et un radar de recul à technologie ultrason."
+        "Études d’ingénierie orientées vers l’électronique et l’informatique. Réalisation de projets tels qu’une application web dynamique et un radar de recul à technologie ultrason."
     },
     {
       degree: "Classe préparatoire intégrée TIC",
@@ -145,7 +162,11 @@ const Index = () => {
                   Salut, je suis <span className="text-primary">Youssef</span>
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                 Étudiant en première année du cycle ingénieur, passionné par le développement logiciel et l’analyse de données. Rigoureux, curieux et motivé par les nouvelles technologies, je souhaite mettre en pratique mes connaissances académiques à travers un stage technique et contribuer activement à des projets concrets favorisant l’innovation et l’apprentissage.
+                 Étudiant en 1 ère année de cycle ingénieur, passionné par l'intelligence artificielle ,
+la programmation et l’analyse de données. Rigoureux, curieux , je souhaite mettre
+en pratique mes connaissances académiques à travers un stage technique
+(17 à 25 semaines dès le 20 juillet) et contribuer à des projets concrets.
+
                 </p>
                 <div className="flex gap-4" style={{ display: 'flex', alignItems: 'center', verticalAlign: 'middle' }}>
                   <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -210,7 +231,7 @@ const Index = () => {
                       <h3 className="font-semibold text-sm">{exp.role}</h3>
                       <p className="text-xs text-muted-foreground">{exp.company}</p>
                       <p className="text-xs text-primary mt-1">{exp.period}</p>
-                      <p className="text-xs text-muted-foreground">{exp.description}</p>
+                      <p className="text-xs text-muted-foreground whitespace-pre-line">{exp.description}</p>
                     </div>
                   ))}
                   </div>
@@ -265,34 +286,36 @@ const Index = () => {
               <div className="grid grid-cols-4 gap-4">
                 <div className="flex flex-col items-center">
                   <Code2 className="w-8 h-8 text-gray-700 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2 text-white">React</span>
+                  <span className="text-sm mt-2 text-white">C</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <FileCode className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Next.js</span>
+                  <Code className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Html/Css/Js</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <FileCode className="w-8 h-8 text-[#3178C6] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">TypeScript</span>
+                  <Coffee className="w-8 h-8 text-[#773cf5] transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Java</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Palette className="w-8 h-8 text-[#06B6D4] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Tailwind</span>
+                  
+                  <span className="text-sm mt-2">React</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-4 gap-4">
                 <div className="flex flex-col items-center">
                   <Server className="w-8 h-8 text-[#339933] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Node.js</span>
+                  <span className="text-sm mt-2">Cisco</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Wind className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Express</span>
+                  <span className="text-sm mt-2">Vhdl</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Database className="w-8 h-8 text-[#47A248] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">MongoDB</span>
+                
+                <Database className="w-8 h-8 text-[#47A248] transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Sql</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <GitBranch className="w-8 h-8 text-[#F05032] transition-transform transform hover:rotate-12 duration-200" />

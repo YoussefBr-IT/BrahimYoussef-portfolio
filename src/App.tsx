@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// 1. CHANGEZ CETTE LIGNE (Remplacez BrowserRouter par HashRouter)
+import { HashRouter, Routes, Route } from "react-router-dom"; 
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ChatProvider } from "./contexts/ChatContext";
@@ -16,14 +17,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <ChatProvider>
-      <BrowserRouter>
+      {/* 2. CHANGEZ CETTE BALISE (BrowserRouter -> HashRouter) */}
+      <HashRouter> 
           <CustomCursor />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </ChatProvider>
+      </HashRouter> 
+      </ChatProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
